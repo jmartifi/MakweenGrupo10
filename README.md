@@ -3,7 +3,7 @@
 ## Lider proyecto
  - Jorge Martínez F.
  
-## Caso elegido
+## Caso a desarrollar
  - Taller Mecánico Rayo Makween
 
 ## colaboradores
