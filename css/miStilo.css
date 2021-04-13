@@ -1,9 +1,24 @@
-body{
-    /*background-color: #2a2e31;*/
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 
+.body{
+    background-color: #2a2e31;
+}
 .head{
     background-color: #2a2e31;
+}
+
+.footer{
+    background-color: #121416;
+}
+
+.conversemos{
+    background-color: #2a2e31;
+    color: #ffffff;
+}
+
+.tit-interior{
+    font-family: 'Rubik', sans-serif;
+    
 }
 
 .bg-dark{
@@ -59,6 +74,27 @@ body{
     color: #8b959c;
 }
 
+.colorGrisTxt{
+    color: #a7aeb3;
+}
+
 .cBlanco{
     color: #ffffff;
+}
+
+.bajadaInt{
+    background-image: url(https://zurb.com/packs/media/zurb/img/curve-bg-d199ac46e37e36d92d1446b4c98e4342.svg);
+    background-size: 100% 101%;
+    height: 40px;
+}
+
+.carouselB{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.carouselB img{
+    width: 400px;
+    height: 400px;
 }

@@ -39,7 +39,35 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar sesión</button>
+                    <button type="button" class="btn btn btn-outline-light" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header d-block">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Iniciar sesión</h5>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Email</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="recipient-pass">
+                              </div>
+                              <button type="button" class="btn btn-primary btn-lg btn-block">Ingresar</button>
+                            </form>
+                          </div>
+                          <div class="modal-footer text-center d-block">
+                            ¿Olvido su clave? | <a href="registrar.html">Registrar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </nav>
             </div>
@@ -100,11 +128,11 @@
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                  <img src="https://picsum.photos/seed/1/300/200" class="card-img-top" alt="...">
+                  <img src="images/golf.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Cambio de disco de frenos</h5>
+                    <p class="card-text">El cliente nos dejo un Volkswagen Golf A6 para relizar el cambio de discos.</p>
+                    <a href="detalleTrabajo.html" class="btn btn-primary">Ver trabajo</a>
                   </div>
                 </div>
             </div>
@@ -314,7 +342,7 @@
             </div>
         </div>
         <div class="row separador"></div>
-        <div class="row head separador">
+        <div class="row footer separador">
             <div class="col">
                 <img src="images/logo.png" width="200px" alt="">
             </div>
@@ -322,7 +350,7 @@
                 <img src="images/facebook-icon-49fa26a0c15cf48ab9f4c513f85bb4c0.svg" alt="">
             </div>
         </div>
-        <div class="row head separador"></div>
+        <div class="row footer separador"></div>
     </div>
     
     
