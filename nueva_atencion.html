@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Mecánico Rayo Makween | Grupo 10 </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/miStilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row head">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="" style="width: 200px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <img src="images/user.jpg" class="rounded-circle imgusr" alt="">
+                    <p class="cBlanco espizq">Jorge Martínez</p>
+                </div>
+            </nav>
+            </div>
+        </div>
+        <div class="row head bajadaInt"></div>
+        <div class="row">
+            <div class="col col-lg-">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="trabajos.html">Trabajos</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Nueva atención</li>
+                  </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3"></div>
+            <div class="col-12 col-lg-6">
+                <form>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault01">Titulo</label>
+                      <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault02">Servicio</label>
+                      <select id="inputState" class="form-control" required>
+                        <option selected>Seleccionar...</option>
+                        <option value="">Mantenimiento al sistema de frenos</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault03">Patente</label>
+                      <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault04">Marca</label>
+                      <select id="inputState" class="form-control" required>
+                        <option selected>Seleccionar...</option>
+                        <option value="">Audi</option>
+                        <option value="">Skoda</option>
+                        <option value="">Volkswagen</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault03">Modelo</label>
+                      <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault04">Año</label>
+                      <select id="inputState" class="form-control" required>
+                        <option selected>Seleccionar...</option>
+                        <option value="">2010</option>
+                        <option value="">2011</option>
+                        <option value="">2012</option>
+                        <option value="">2013</option>
+                        <option value="">2014</option>
+                        <option value="">2015</option>
+                        <option value="">2016</option>
+                        <option value="">2017</option>
+                        <option value="">2018</option>
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        <option value="">2021</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault03">Fecha ingreso</label>
+                      <input class="form-control" type="date" id="example-date-input">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationDefault04">Mecánico</label>
+                      <select id="inputState" class="form-control" required>
+                        <option selected>Seleccionar...</option>
+                        <option value="">Javier Barrera</option>
+                        <option value="">Nicolas Figueroa</option>
+                        <option value="">Cristobal Aburto</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="validationDefault05">Breve reseña</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="validationDefault05">Diagnostico</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="validationDefault05">Imagen 01</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">No seleccionado...</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="validationDefault05">Imagen 02</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">No seleccionado...</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="validationDefault05">Imagen 03</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">No seleccionado...</label>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Solicitar aprobación</button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-3"></div>
+        </div>
+        <div class="row separador"></div>
+    </div>
+    
+    
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

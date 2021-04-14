@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+.body{
+    background-color: #2a2e31;
+}
+.head{
+    background-color: #2a2e31;
+}
+
+.footer{
+    background-color: #121416;
+}
+
+.conversemos{
+    background-color: #2a2e31;
+    color: #ffffff;
+}
+
+.tit-interior{
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.bg-dark{
+    background-color: #2a2e31 !important;
+}
+
+.carousel img{
+    height: 60vh;
+}
+
+.carousel-caption{
+    background-color: #2a2e31;
+    opacity: 0.8;
+}
+
+.col{
+    /*padding-right: 0px;
+    padding-left: 0px;*/
+}
+
+.separador{
+    padding-top: 40px;
+}
+
+.separadorCard{
+    padding-bottom: 40px;
+}
+
+.espizq{
+    padding-left: 5px;
+}
+
+.line-tit{
+    border-bottom: 2px solid #2a2e31;
+    display: block;
+    margin-bottom: 2.5rem;
+    width: 4rem;
+}
+
+.line-titb{
+    border-bottom: 2px solid #8b959c;
+    display: block;
+    margin-bottom: 2.5rem;
+    width: 4rem;
+}
+
+.line-tit-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-tres{
+    background-color: #f1f2f3;
+}
+
+.colorGris{
+    color: #8b959c;
+}
+
+.colorGrisTxt{
+    color: #a7aeb3;
+}
+
+.cBlanco{
+    color: #ffffff;
+}
+
+.bajadaInt{
+    background-image: url(https://zurb.com/packs/media/zurb/img/curve-bg-d199ac46e37e36d92d1446b4c98e4342.svg);
+    background-size: 100% 101%;
+    height: 40px;
+}
+
+.carouselB{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.carouselB img{
+    width: 400px;
+    height: 400px;
+}
+
+.imgusr{
+    width: 30px;
+    border: #ffffff 2px solid;
+}
+
+.breadcrumb{
+    background-color: #FFFFFF;
+}
