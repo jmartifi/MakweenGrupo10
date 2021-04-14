@@ -47,6 +47,10 @@
     padding-bottom: 40px;
 }
 
+.espizq{
+    padding-left: 5px;
+}
+
 .line-tit{
     border-bottom: 2px solid #2a2e31;
     display: block;
@@ -97,4 +101,9 @@
 .carouselB img{
     width: 400px;
     height: 400px;
+}
+
+.imgusr{
+    width: 30px;
+    border: #ffffff 2px solid;
 }
