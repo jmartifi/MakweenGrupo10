@@ -95,39 +95,26 @@
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
-                <form>
+                <div id="formValContReg" class="alert alert-danger" role="alert" style="display: none;"></div>
+                <form id="formRegistrar">
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationServer01">Nombre</label>
-                      <input type="text" class="form-control" id="validationServer01" required>
-                      <div class="valid-feedback">
-                        Excelente!
-                      </div>
+                      <label for="inpRegNombre">Nombre</label>
+                      <input type="text" class="form-control" id="inpRegNombre">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationServer02">Apellido</label>
-                      <input type="text" class="form-control" id="validationServer02" required>
-                      <div class="valid-feedback">
-                        Excelente!
-                      </div>
+                      <label for="inpRegApellido">Apellido</label>
+                      <input type="text" class="form-control" id="inpRegApellido">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationServer01">Correo electrónico</label>
-                      <input type="text" class="form-control" id="validationServer03" required>
-                      <div class="valid-feedback">
-                        Excelente!
-                      </div>
+                      <label for="inpRegEmail">Correo electrónico</label>
+                      <input type="email" class="form-control" id="inpRegEmail">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationServer02">Contraseña</label>
-                      <input type="password" class="form-control" id="validationServer04" required>
-                      <div class="valid-feedback">
-                        Excelente!
-                      </div>
+                      <label for="inpRegPass">Contraseña</label>
+                      <input type="password" class="form-control" id="inpRegPass">
                     </div>
                   </div>
-
-
                   <button class="btn btn-primary" type="submit">Unirme</button>
                 </form>
             </div>
@@ -144,30 +131,32 @@
         </div>
         <div class="row conversemos">
             <div class="col">
-                <form>
+                <div id="formValCont" class="alert alert-danger" role="alert" style="display: none;"></div>
+                <form id="formContacto">
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault01">Nombre</label>
-                      <input type="text" class="form-control" id="validationDefault01" required>
+                      <label for="inpNombre">Nombre</label>
+                      <input type="text" class="form-control" id="inpNombre">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault02">Apellido</label>
-                      <input type="text" class="form-control" id="validationDefault02" required>
+                      <label for="inpApellido">Apellido</label>
+                      <input type="text" class="form-control" id="inpApellido">
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault03">Teléfono</label>
-                      <input type="text" class="form-control" id="validationDefault03" required>
+                      <label for="inpFono">Teléfono</label>
+                      <input type="number" class="form-control" min="0" id="inpFono">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault04">Dirección de correo electrónico</label>
-                      <input type="text" class="form-control" id="validationDefault04" required>
+                      <label for="inpEmail">Dirección de correo electrónico</label>
+                      <input type="email" class="form-control" id="inpEmail">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="validationDefault05">¿Cómo podemos ayudarte?</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="inpText">¿Cómo podemos ayudarte?</label>
+                    <textarea class="form-control" id="inpText" rows="3"></textarea>
+                    <span><span id="contInpTxt">0</span> Caracteres.</span>
                   </div>
                   <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>
@@ -187,7 +176,7 @@
     
     
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/base.js"></script>
 </body>
 </html>
