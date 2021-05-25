@@ -39,6 +39,11 @@ $(document).ready(function(){
             $('#inpText').css('background-color', '#d4edda');
         }
     });
+    
+    $('#formLogin').submit(function(e){
+        e.preventDefault();
+        valForLogin();
+    });
 });
 
 function revInd(P_id, P_reg, P_DvE){
@@ -160,5 +165,35 @@ function valForCont(){
         $('#formValCont').html('Estimado(a) ' + V_nombre+' '+V_apellido+':<br><br>Tu solicitud ha sido ingresada y será respondida al email <strong>'+V_email+'</strong> lo más pronto posible.');
         $('#formValCont').slideDown();
         $('#formContacto').slideUp();
+    }
+}
+
+function valForLogin(){
+    V_err = 0;
+    V_txtErr = '<b>Hay error(es):</b><br><br>';
+    if($('#inpUser').val().length == 0){
+        $('#inpUser').css('border', '2px solid #dc3545');
+        $('#inpUser').css('background-color', '#f8d7da');
+        V_err++;
+        V_txtErr += 'Usuario no puede ser vacío.<br>';
+    }else{
+        $('#inpUser').css('border', '2px solid #155724');
+        $('#inpUser').css('background-color', '#d4edda');
+    }
+    if($('#inpPass').val().length <= 5){
+        $('#inpPass').css('border', '2px solid #dc3545');
+        $('#inpPass').css('background-color', '#f8d7da');
+        V_err++;
+        V_txtErr += 'Contraseña no puede ser vacío.<br>';
+    }else{
+        $('#inpPass').css('border', '2px solid #155724');
+        $('#inpPass').css('background-color', '#d4edda');
+    }
+    
+    if(V_err > 0){
+        $('#formValCont').html(V_txtErr);
+        $('#formValCont').slideDown();
+    }else{
+        window.open('inicio.html','_self');
     }
 }
