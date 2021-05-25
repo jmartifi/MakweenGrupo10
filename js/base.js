@@ -1,5 +1,9 @@
 $(document).ready(function(){
     
+    $('#formBuscador').submit(function(e){
+        e.preventDefault();
+        valForBuscar();
+    });
     $('#formContacto').submit(function(e){
         e.preventDefault();
         valForCont();
@@ -195,5 +199,37 @@ function valForLogin(){
         $('#formValCont').slideDown();
     }else{
         window.open('inicio.html','_self');
+    }
+}
+
+function valForBuscar(){
+    V_err = 0;
+    V_txtErr = '<b>Hay error(es):</b><br><br>';
+    if($('#inpBuscar').val().length == 0){
+        $('#inpBuscar').css('border', '2px solid #dc3545');
+        $('#inpBuscar').css('background-color', '#f8d7da');
+        V_err++;
+        V_txtErr += 'Usuario no puede ser vacío.<br>';
+    }else{
+        $('#inpBuscar').css('border', '2px solid #155724');
+        $('#inpBuscar').css('background-color', '#d4edda');
+    }
+    
+    if(V_err > 0){
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            text: 'Cuadro de busqueda no puede ser vacío.',
+            showConfirmButton: false,
+            timer: 4500
+        })
+    }else{
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'busqueda exitosa',
+            showConfirmButton: false,
+            timer: 4500
+        })
     }
 }

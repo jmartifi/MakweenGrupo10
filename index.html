@@ -119,8 +119,8 @@
         </div>
         <div class="row separadorCard">
             <div class="col">
-                <form class="form-inline">
-                  <input class="form-control" type="search" placeholder="trabajo, mecánico" aria-label="Search">
+                <form id="formBuscador" class="form-inline">
+                  <input id="inpBuscar" class="form-control" type="search" placeholder="trabajo, mecánico" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
@@ -327,7 +327,7 @@
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
                       <label for="inpFono">Teléfono</label>
-                      <input type="number" class="form-control" min="0" max="1" id="inpFono">
+                      <input type="number" class="form-control" min="0" id="inpFono">
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="inpEmail">Dirección de correo electrónico</label>
@@ -359,5 +359,6 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>
