@@ -33,6 +33,8 @@ $(document).ready(function(){
             $('#inpDiagno').css('background-color', '#d4edda');
         }
     });
+    
+    $('#inpFecha').attr("max",new Date().toISOString().split("T")[0]);
 });
 
 function getMarcas(){
@@ -209,8 +211,7 @@ function valForNuevaAt(){
             $('#lbArchC').text(items[0].name);
         }
     }
-    
-    
+        
     if(V_err > 0){
         $('#formValNuevaAt').html(V_txtErr);
         $('#formValNuevaAt').slideDown();
