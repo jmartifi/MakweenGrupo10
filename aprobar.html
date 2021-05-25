@@ -113,20 +113,26 @@
         <div class="row">
             <div class="col-12 col-lg-3"></div>
             <div class="col-12 col-lg-6">
-                <form>
+                <div id="formValApr" class="alert alert-danger" role="alert" style="display: none;"></div>
+                <form id="formAprobar">
                       <div class="form-row">
                         <div class="col">
-                          <label for="validationDefault01">Estado</label>
-                          <select id="inputState" class="form-control" required>
-                            <option selected>Seleccionar...</option>
-                            <option value="">Aprobado</option>
-                            <option value="">Rechazado</option>
+                          <label for="inpSts">Estado</label>
+                          <select id="inpSts" class="form-control" >
+                            <option value="" selected>Seleccionar...</option>
+                            <option value="APR">Aprobado</option>
+                            <option value="REC">Rechazado</option>
                           </select>
                         </div>
                       </div>
+                      <div class="form-group" id="dvMoRe" style="display:none">
+                        <label for="inpMotRec">Motivo Rechazo</label>
+                        <textarea class="form-control" id="inpMotRec" rows="3"></textarea>
+                      </div>
                       <div class="form-group">
-                        <label for="validationDefault05">Observación estado</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="inpObservacion">Observación</label>
+                        <textarea class="form-control" id="inpObservacion" rows="3"></textarea>
+                        <span><span id="contInpResena">0</span> Caracteres.</span>
                       </div>
                       <button class="btn btn-primary" type="submit">Guardar cambios</button>
                     </form>
@@ -138,7 +144,8 @@
     
     
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/aprobar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>

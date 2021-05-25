@@ -50,16 +50,16 @@
                             <h5 class="modal-title text-center" id="exampleModalLabel">Iniciar sesión</h5>
                           </div>
                           <div class="modal-body">
-                            <form>
+                            <form id="formLogin">
                               <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Email</label>
-                                <input type="text" class="form-control" id="recipient-name">
+                                <label for="inpUser" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="inpUser">
                               </div>
                               <div class="form-group">
-                                <label for="message-text" class="col-form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="recipient-pass">
+                                <label for="inpPass" class="col-form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="inpPass">
                               </div>
-                              <a href="inicio.html" class="btn btn-primary btn-lg btn-block">Ingresar</a>
+                              <button class="btn btn-primary btn-lg btn-block" type="submit">Ingresar</button>
                             </form>
                           </div>
                           <div class="modal-footer text-center d-block">
@@ -176,30 +176,32 @@
         </div>
         <div class="row conversemos">
             <div class="col">
-                <form>
+                <div id="formValCont" class="alert alert-danger" role="alert" style="display: none;"></div>
+                <form id="formContacto">
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault01">Nombre</label>
-                      <input type="text" class="form-control" id="validationDefault01" required>
+                      <label for="inpNombre">Nombre</label>
+                      <input type="text" class="form-control" id="inpNombre">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault02">Apellido</label>
-                      <input type="text" class="form-control" id="validationDefault02" required>
+                      <label for="inpApellido">Apellido</label>
+                      <input type="text" class="form-control" id="inpApellido">
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault03">Teléfono</label>
-                      <input type="text" class="form-control" id="validationDefault03" required>
+                      <label for="inpFono">Teléfono</label>
+                      <input type="number" class="form-control" min="0" id="inpFono">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault04">Dirección de correo electrónico</label>
-                      <input type="text" class="form-control" id="validationDefault04" required>
+                      <label for="inpEmail">Dirección de correo electrónico</label>
+                      <input type="email" class="form-control" id="inpEmail">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="validationDefault05">¿Cómo podemos ayudarte?</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="inpText">¿Cómo podemos ayudarte?</label>
+                    <textarea class="form-control" id="inpText" rows="3"></textarea>
+                    <span><span id="contInpTxt">0</span> Caracteres.</span>
                   </div>
                   <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>
@@ -219,7 +221,7 @@
     
     
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/base.js"></script>
 </body>
 </html>

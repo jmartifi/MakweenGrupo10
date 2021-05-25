@@ -60,101 +60,110 @@
         <div class="row">
             <div class="col-12 col-lg-3"></div>
             <div class="col-12 col-lg-6">
-                <form>
+               <div id="formValNuevaAt" class="alert alert-danger" role="alert" style="display: none;"></div>
+                <form id="formNuevaAt">
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault01">Titulo</label>
-                      <input type="text" class="form-control" id="validationDefault01" required>
+                      <label for="inpTitulo">Titulo</label>
+                      <input type="text" class="form-control" id="inpTitulo" >
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault02">Servicio</label>
-                      <select id="inputState" class="form-control" required>
-                        <option selected>Seleccionar...</option>
-                        <option value="">Mantenimiento al sistema de frenos</option>
+                      <label for="selServicio">Servicio</label>
+                      <select id="selServicio" class="form-control" >
+                        <option value="" selected>Seleccionar...</option>
+                        <option value="0">Mantenimiento al sistema de frenos</option>
+                        <option value="0">Cambio de aceite</option>
+                        <option value="0">Reparación y/o mantenimiento de cajas de cambio</option>
+                        <option value="0">Cambio y/o mantenimiento de embreague</option>
+                        <option value="0">Mantenimiento al sistema de frenos</option>
+                        <option value="0">Reparación y/o mantención en tren delantero y trasero</option>
+                        <option value="0">Semi ajuste y ajuste de motor</option>
+                        <option value="0">Mantenimiento en general a todas las marcas</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault03">Patente</label>
-                      <input type="text" class="form-control" id="validationDefault03" required>
+                      <label for="inpPatente">Patente</label>
+                      <input type="text" class="form-control" id="inpPatente" maxlength="6" >
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault04">Marca</label>
-                      <select id="inputState" class="form-control" required>
-                        <option selected>Seleccionar...</option>
-                        <option value="">Audi</option>
-                        <option value="">Skoda</option>
-                        <option value="">Volkswagen</option>
+                      <label for="selMarca">Marca</label>
+                      <select id="selMarca" class="form-control" >
+                        <option value="" selected>Seleccionar...</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault03">Modelo</label>
-                      <input type="text" class="form-control" id="validationDefault03" required>
+                      <label for="selModelo">Modelo</label>
+                      <select id="selModelo" class="form-control" disabled>
+                          <option value="">Seleccionar modelo...</option>
+                      </select>
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault04">Año</label>
-                      <select id="inputState" class="form-control" required>
-                        <option selected>Seleccionar...</option>
-                        <option value="">2010</option>
-                        <option value="">2011</option>
-                        <option value="">2012</option>
-                        <option value="">2013</option>
-                        <option value="">2014</option>
-                        <option value="">2015</option>
-                        <option value="">2016</option>
-                        <option value="">2017</option>
-                        <option value="">2018</option>
-                        <option value="">2019</option>
-                        <option value="">2020</option>
-                        <option value="">2021</option>
+                      <label for="selAno">Año</label>
+                      <select id="selAno" class="form-control" >
+                        <option value="" selected>Seleccionar...</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault03">Fecha ingreso</label>
-                      <input class="form-control" type="date" id="example-date-input">
+                      <label for="inpFecha">Fecha ingreso</label>
+                      <input class="form-control" type="date" id="inpFecha">
                     </div>
                     <div class="col-md-6 mb-3">
-                      <label for="validationDefault04">Mecánico</label>
-                      <select id="inputState" class="form-control" required>
-                        <option selected>Seleccionar...</option>
-                        <option value="">Javier Barrera</option>
-                        <option value="">Nicolas Figueroa</option>
-                        <option value="">Cristobal Aburto</option>
+                      <label for="selMecanico">Mecánico</label>
+                      <select id="selMecanico" class="form-control" >
+                        <option value="" selected>Seleccionar...</option>
+                        <option value="jbarrera">Javier Barrera</option>
+                        <option value="nFiguera">Nicolas Figueroa</option>
+                        <option value="cAburto">Cristobal Aburto</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="validationDefault05">Breve reseña</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="inpResena">Breve reseña</label>
+                    <textarea class="form-control" id="inpResena" rows="3"></textarea>
+                    <span><span id="contInpResena">0</span> Caracteres.</span>
                   </div>
                   <div class="form-group">
-                    <label for="validationDefault05">Diagnostico</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="inpDiagno">Diagnostico</label>
+                    <textarea class="form-control" id="inpDiagno" rows="3"></textarea>
+                    <span><span id="contInpDiagno">0</span> Caracteres.</span>
                   </div>
                   <div class="form-group">
-                    <label for="validationDefault05">Imagen 01</label>
+                    <label>Imagen 01</label>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label" for="customFile">No seleccionado...</label>
+                      <input type="file" class="custom-file-input" id="archA">
+                      <label id="lbArchA" class="custom-file-label" for="archA">No seleccionado...</label>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="validationDefault05">Imagen 02</label>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label" for="customFile">No seleccionado...</label>
+                      <input type="file" class="custom-file-input" id="archB">
+                      <label id="lbArchB" class="custom-file-label" for="archB">No seleccionado...</label>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="validationDefault05">Imagen 03</label>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="customFile">
-                      <label class="custom-file-label" for="customFile">No seleccionado...</label>
+                      <input type="file" class="custom-file-input" id="archC">
+                      <label id="lbArchC" class="custom-file-label" for="archC">No seleccionado...</label>
                     </div>
                   </div>
                   <button class="btn btn-primary" type="submit">Solicitar aprobación</button>
@@ -167,7 +176,8 @@
     
     
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/atencion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>
